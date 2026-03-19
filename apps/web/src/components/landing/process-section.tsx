@@ -16,10 +16,10 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="bg-white px-4 py-10">
+    <section className="tablet:px-6 tablet:py-20 bg-white px-4 py-10">
       <div>
         {/* 타이틀 영역 */}
-        <div className="mb-8 flex flex-col items-center gap-3">
+        <div className="tablet:gap-4 mb-8 flex flex-col items-center gap-3">
           <span className="typo-heading-h1 text-primary">입주 점검 진행 방식</span>
           <h2 className="typo-display-lg text-foreground text-center whitespace-pre-line">
             {'점검 요청부터\n리포트 확인까지'}

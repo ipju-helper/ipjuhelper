@@ -5,10 +5,10 @@ import IconExpertcheck from '@workspace/ui/assets/icons/communication/fill_exper
 
 export function ServiceSection() {
   return (
-    <section className="bg-white px-4 py-10">
+    <section className="tablet:px-6 tablet:py-20 bg-white px-4 py-10">
       <div>
         {/* 타이틀 영역 */}
-        <div className="mb-8 flex flex-col items-center gap-3">
+        <div className="tablet:gap-4 mb-8 flex flex-col items-center gap-3">
           <span className="typo-heading-h1 text-primary">점검 방법 선택</span>
           <h2 className="typo-display-lg text-center whitespace-pre-line text-[#1E1E1E]">
             {'상황에 맞게\n점검을 시작하세요.'}

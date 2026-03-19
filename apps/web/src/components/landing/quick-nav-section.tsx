@@ -4,20 +4,32 @@ import IconExpertcheck from '@workspace/ui/assets/icons/communication/fill_exper
 
 export function QuickNavSection() {
   return (
-    <section className="bg-white px-4 pt-8">
+    <section className="tablet:px-6 bg-white px-4 pt-8">
       <div className="bg-primary rounded-[20px] px-4 py-2">
         <div className="flex">
           <QuickNavButton
             direction="vertical"
             icon={<IconSelfcheck width={24} height={24} />}
             label="직접 점검하기"
-            className="flex-1"
+            className="tablet:hidden flex-1"
           />
           <QuickNavButton
             direction="vertical"
             icon={<IconExpertcheck width={24} height={24} />}
             label="전문가 점검 요청"
-            className="flex-1"
+            className="tablet:hidden flex-1"
+          />
+          <QuickNavButton
+            direction="horizontal"
+            icon={<IconSelfcheck width={32} height={32} />}
+            label="직접 점검하기"
+            className="tablet:flex hidden flex-1"
+          />
+          <QuickNavButton
+            direction="horizontal"
+            icon={<IconExpertcheck width={32} height={32} />}
+            label="전문가 점검 요청"
+            className="tablet:flex hidden flex-1"
           />
         </div>
       </div>

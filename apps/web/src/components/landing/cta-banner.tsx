@@ -15,7 +15,11 @@ export function CtaSection() {
           <p className="typo-heading-h3 text-muted text-center whitespace-pre-line">
             {'점검 위치와 날짜를 입력하면\n전문가에게 요청이 전달됩니다.'}
           </p>
-          <Button variant="overlay" size="overlay">
+          <Button
+            variant="overlay"
+            size="overlay"
+            className="tablet:h-14 tablet:px-10 tablet:text-[18px] tablet:leading-6"
+          >
             점검 요청하기
           </Button>
         </div>

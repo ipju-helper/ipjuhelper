@@ -3,10 +3,10 @@ import { Button } from '@workspace/ui/components/button';
 
 export function ExtraServiceSection() {
   return (
-    <section className="bg-white px-4 py-10">
+    <section className="tablet:px-6 tablet:py-20 bg-white px-4 py-10">
       <div>
         {/* 타이틀 영역 */}
-        <div className="mb-6 flex flex-col items-center gap-3">
+        <div className="tablet:gap-4 mb-6 flex flex-col items-center gap-3">
           <span className="typo-heading-h1 text-primary">입주 준비 서비스</span>
           <h2 className="typo-display-lg text-center whitespace-pre-line text-[#1E1E1E]">
             {'점검 이후 필요한 서비스까지\n입주도우미에서'}
@@ -20,7 +20,7 @@ export function ExtraServiceSection() {
         <div className="mb-6 flex flex-col gap-4.5">
           {/* 줄눈 시공 - 큰 카드 */}
           <div className="flex flex-col gap-3">
-            <div className="h-45 overflow-hidden rounded-[20px]">
+            <div className="tablet:h-88.5 h-45 overflow-hidden rounded-[20px]">
               <Image
                 src="/images/service-grout.jpg"
                 alt="줄눈 시공"
@@ -40,7 +40,7 @@ export function ExtraServiceSection() {
           {/* 입주 청소 + 탄성 코트 - 작은 카드 2개 */}
           <div className="flex gap-4">
             <div className="flex flex-1 flex-col gap-3">
-              <div className="h-28.25 overflow-hidden rounded-[20px]">
+              <div className="tablet:h-56.75 h-28.25 overflow-hidden rounded-[20px]">
                 <Image
                   src="/images/service-cleaning.jpg"
                   alt="입주 청소"
@@ -57,7 +57,7 @@ export function ExtraServiceSection() {
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-3">
-              <div className="h-28.25 overflow-hidden rounded-[20px]">
+              <div className="tablet:h-56.75 h-28.25 overflow-hidden rounded-[20px]">
                 <Image
                   src="/images/service-coating.jpg"
                   alt="탄성 코트"
@@ -81,7 +81,9 @@ export function ExtraServiceSection() {
           <p className="typo-body-xl text-foreground text-center">
             관련 전문가도 함께 모집하고 있습니다.
           </p>
-          <Button className="h-12 px-7">전문가로 참여하기</Button>
+          <Button className="tablet:h-14 tablet:px-10 tablet:text-[18px] tablet:leading-6 h-12 px-7">
+            전문가로 참여하기
+          </Button>
         </div>
       </div>
     </section>

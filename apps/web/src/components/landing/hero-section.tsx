@@ -9,15 +9,15 @@ export function HeroSection() {
         src="/images/hero.jpg"
         alt="입주 하자 점검"
         fill
-        className="object-cover object-bottom"
+        className="tablet:object-[center_67%] object-cover object-bottom"
         priority
       />
       <div className="absolute inset-0 bg-black/40" />
 
       {/* 콘텐츠 */}
-      <div className="relative flex h-full items-end justify-center px-8 pt-8 pb-8">
-        <div className="flex w-full flex-col justify-end gap-6">
-          <div className="flex flex-col gap-2">
+      <div className="tablet:items-end tablet:justify-center relative flex h-full items-end justify-center px-8 pt-8 pb-8">
+        <div className="tablet:w-82 flex w-full flex-col justify-end gap-6">
+          <div className="tablet:gap-3 flex flex-col gap-2">
             <h1 className="typo-display-lg whitespace-pre-line text-white">
               {'입주 하자 점검,\n왜 아직도 검색해서\n찾으시나요?'}
             </h1>
@@ -25,7 +25,9 @@ export function HeroSection() {
               {'카페와 단톡방 대신,\n입주도우미에서 바로 연결하세요.'}
             </p>
           </div>
-          <Button className="h-12 self-start px-7">입주도우미 이용하기</Button>
+          <Button className="tablet:h-14 tablet:px-10 tablet:text-[18px] tablet:leading-6 h-12 self-start px-7">
+            입주도우미 이용하기
+          </Button>
         </div>
       </div>
     </section>
