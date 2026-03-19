@@ -18,7 +18,7 @@ export function StepCard({
 }: StepCardProps) {
   return (
     <div
-      className={cn('relative h-43 w-[170.5px] overflow-hidden rounded-[20px]', className)}
+      className={cn('relative h-43 overflow-hidden rounded-[20px]', className)}
       style={{ backgroundColor: bgColor }}
     >
       {/* 이미지 */}
