@@ -16,10 +16,10 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="tablet:px-6 tablet:py-20 bg-white px-4 py-10">
-      <div>
+    <section className="tablet:px-6 tablet:py-20 desktop:px-8 desktop:py-30 bg-white px-4 py-10">
+      <div className="desktop:mx-auto desktop:max-w-300">
         {/* 타이틀 영역 */}
-        <div className="tablet:gap-4 mb-8 flex flex-col items-center gap-3">
+        <div className="tablet:gap-4 desktop:gap-5 mb-8 flex flex-col items-center gap-3">
           <span className="typo-heading-h1 text-primary">입주 점검 진행 방식</span>
           <h2 className="typo-display-lg text-foreground text-center whitespace-pre-line">
             {'점검 요청부터\n리포트 확인까지'}
@@ -32,8 +32,8 @@ export function ProcessSection() {
         </div>
 
         {/* 타임라인 */}
-        <div className="rounded-2xl bg-[#FAFBFA] px-4 py-6">
-          <div className="relative mx-auto flex w-58 flex-col gap-15">
+        <div className="desktop:mx-auto desktop:max-w-184 rounded-2xl bg-[#FAFBFA] px-4 py-6">
+          <div className="desktop:w-70 relative mx-auto flex w-58 flex-col gap-15">
             {/* 세로 점선 */}
             <div className="border-border absolute top-0 bottom-0 left-9.75 w-0 border-l border-dashed" />
 
